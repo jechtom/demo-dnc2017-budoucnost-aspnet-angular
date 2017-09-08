@@ -11,14 +11,17 @@
             <th>Temp. (C)</th>
             <th>Temp. (F)</th>
             <th>Summary</th>
+            <td></td>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let forecast of forecasts">
+        <tr *ngFor="let forecast of forecasts" [ngClass]="{ danger: forecast.temperatureC > 40 }">
             <td>{{ forecast.dateFormatted }}</td>
             <td>{{ forecast.temperatureC }}</td>
             <td>{{ forecast.temperatureF }}</td>
-            <td>{{ forecast.summary }}</td>
+            <td>{{ forecast.summary }} {{ temp.getMessage(forecast.temperatureC) }}</td>
+            <td><counter [(currentCount)]="forecast.temperatureC"></counter></td>
         </tr>
     </tbody>
 </table>
+<button (click)="addLine()">Add!</button>

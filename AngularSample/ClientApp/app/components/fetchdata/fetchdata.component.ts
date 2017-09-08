@@ -1,17 +1,28 @@
 import { Component, Inject } from '@angular/core';
 import { Http } from '@angular/http';
+import { Temperatures } from '../../temperatures';
 
 @Component({
     selector: 'fetchdata',
-    templateUrl: './fetchdata.component.html'
+    templateUrl: './fetchdata.component.html',
+    providers: [Temperatures]
 })
 export class FetchDataComponent {
     public forecasts: WeatherForecast[];
 
-    constructor(http: Http, @Inject('BASE_URL') baseUrl: string) {
+    constructor(http: Http, @Inject('BASE_URL') baseUrl: string, public temp: Temperatures) {
         http.get(baseUrl + 'api/SampleData/WeatherForecasts').subscribe(result => {
             this.forecasts = result.json() as WeatherForecast[];
         }, error => console.error(error));
+    }
+
+    public addLine() {
+        this.forecasts.push({
+            dateFormatted: 'a',
+            temperatureC: 10,
+            temperatureF: 10,
+            summary: "Something something"
+        });
     }
 }
 
