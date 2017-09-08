@@ -1,0 +1,18 @@
+﻿@import 'variables.scss';
+@import 'headers.scss';
+
+
+@mixin logo() {
+    $logo: 'logo.png';
+    background-image: url($logo);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: $font-stack;
+    background-color: white;
+    color: $primary-color;
+
+    @include logo;
+}

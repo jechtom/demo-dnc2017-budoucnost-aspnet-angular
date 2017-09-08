@@ -1,0 +1,13 @@
+﻿@import 'variables.scss';
+
+@mixin header($size) {
+    font-family: $font-stack;
+    font-weight: lighter;
+    color: lighten($primary-color, 25%);
+    font-size: $size;
+}
+
+h1 { @include header(2em); }
+h2 { @include header(1.5em); }
+h3 { @include header(1.25em); }
+ 
