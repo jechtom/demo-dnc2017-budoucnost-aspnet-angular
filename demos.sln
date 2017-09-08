@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebpackSampleWeb", "Webpack
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NodeServicesSample", "NodeServicesSample\NodeServicesSample.csproj", "{B15C54A5-B87A-4795-AB97-4C02E97ED5D4}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularSample", "AngularSample\AngularSample.csproj", "{342E6B2F-E067-4038-9450-CDDEF3EBB28F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B15C54A5-B87A-4795-AB97-4C02E97ED5D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B15C54A5-B87A-4795-AB97-4C02E97ED5D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B15C54A5-B87A-4795-AB97-4C02E97ED5D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{342E6B2F-E067-4038-9450-CDDEF3EBB28F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{342E6B2F-E067-4038-9450-CDDEF3EBB28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{342E6B2F-E067-4038-9450-CDDEF3EBB28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{342E6B2F-E067-4038-9450-CDDEF3EBB28F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
